@@ -1,0 +1,173 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+}
+
+.cartao {
+    position: relative;
+    width: 100%;
+    min-height: 575px;
+    max-width: 400px;
+    background-image: url('assets/images/bg-image.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    overflow: hidden;
+    padding-top: 100px;
+    text-align: center;
+    color: white;
+    font-family: sans-serif;
+    z-index: 0;
+}
+
+.cartao::before {
+    content: "";
+    position: absolute;
+    top: 220px;      /* sobe um pouco para atravessar */
+    left: -150px;    /* desloca para esquerda */
+    width: 200%;     /* bem largo para cobrir toda a diagonal */
+    height: 55%;     /* controla a altura da faixa */
+    background: #FF921F; /* cor da faixa (laranja no exemplo) */
+    transform: rotate(25deg); /* ângulo da faixa */
+    z-index: -1;     /* fica atrás do conteúdo */
+}
+
+.logo{
+    width: 50px;
+}
+
+.img-bg{
+    position: absolute;
+    bottom: -35%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250%;
+    height: 130%;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.foto-container-logo {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.foto-container {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid white;
+    background-color: white;
+}
+
+.foto-emily {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.infos {
+    margin-top: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+.nome{
+    color: #1B1927;
+    font-size: 2.5rem;
+    font-family: "Anton", sans-serif;
+    margin-bottom: 0;
+}
+
+.cargo{
+    color: #1B1927;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+
+
+/* Link geral (círculo + texto) */
+.link-botao {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Apenas o círculo */
+.botao {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+}
+
+.botao i {
+    font-size: 32px;
+    color: white;
+}
+
+/* Texto embaixo */
+.link-botao p {
+    font-weight: bold;
+    color: black;
+    font-size: 14px;
+    margin: 0;
+}
+
+.mensagem-interacao {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.mensagem-interacao p {
+    font-weight: bold;
+    color: black;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+
+.mensagem-interacao .linha {
+    width: 80px;
+    height: 2px;
+    background: black;
+    margin: 0 auto; /* centraliza */
+}
+
+
+
+
+
+
+
+
